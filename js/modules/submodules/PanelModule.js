@@ -1,0 +1,2 @@
+import {Module} from '../Module.js';
+export class PanelModule extends Module{constructor(){super('panels',{name:'Panel Module',type:'ui'})}start(engine){this.engine=engine;document.addEventListener('click',event=>{const button=event.target.closest?.('[data-panel-toggle]');if(!button)return;const target=document.querySelector(`[data-panel="${CSS.escape(button.dataset.panelToggle)}"]`);if(target)target.hidden=!target.hidden})}}
