@@ -1,0 +1,1 @@
+export class PageAPI { constructor(engine){this.engine=engine} get current(){return this.engine.page?.current||null} open(path){return this.engine.router?.navigate(path)} }
