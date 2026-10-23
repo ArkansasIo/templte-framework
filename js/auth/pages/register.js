@@ -1,0 +1,2 @@
+import {PasswordPolicy} from '../PasswordPolicy.js';
+const form=document.querySelector('[data-auth="register"]');form?.addEventListener('submit',e=>{e.preventDefault();const data=Object.fromEntries(new FormData(form));if(!PasswordPolicy.validate(data.password)){alert(`Password must be at least ${PasswordPolicy.minLength} characters.`);return}location.href='login.html'});
