@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HTML5 API Engine">
+  <title>HTML5 API Engine</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/sub/layout.css">
+  <link rel="stylesheet" href="css/sub/components.css">
+  <link rel="stylesheet" href="css/sub/menus.css">
+</head>
+<body>
+  <header class="app-header">
+    <button class="menu-toggle" data-menu-toggle aria-label="Toggle menu">☰</button>
+    <h1 class="app-title">HTML5 API Engine</h1>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" data-sidebar>
+      <nav class="main-menu" aria-label="Main navigation">
+        <a class="menu-item active" href="#home">Home</a>
+        <details class="menu-group">
+          <summary>Engine</summary>
+          <a class="submenu-item" href="#modules">Modules</a>
+          <a class="submenu-item" href="#classes">Classes</a>
+          <a class="submenu-item" href="#types">Types</a>
+        </details>
+        <details class="menu-group">
+          <summary>Pages</summary>
+          <a class="submenu-item" href="pages/subpages/dashboard.html">Dashboard</a>
+          <a class="submenu-item" href="pages/subpages/settings.html">Settings</a>
+        </details>
+        <details class="menu-group">
+          <summary>API</summary>
+          <a class="submenu-item" href="#api">API Reference</a>
+          <a class="submenu-item" href="#events">Events</a>
+        </details>
+      </nav>
+    </aside>
+
+    <main id="app" class="page-content">
+      <section class="hero">
+        <span class="eyebrow">ENGINE CORE</span>
+        <h2>Modular HTML5 Application Framework</h2>
+        <p>API-first architecture with pages, subpages, styles, menus, modules, classes and typed contracts.</p>
+        <button class="button primary" data-action="boot">Boot Engine</button>
+      </section>
+      <section id="modules" class="card-grid"></section>
+    </main>
+  </div>
+
+  <footer class="app-footer">HTML5 API Engine · v0.1.0-alpha</footer>
+  <script type="module" src="js/engine/bootstrap.js"></script>
+</body>
+</html>
