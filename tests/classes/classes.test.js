@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {ComponentClass} from '../../js/classes/ComponentClass.js';test('component class stores identity',()=>{const component=new ComponentClass('demo',{tag:'div'});assert.equal(component.id,'demo');assert.equal(component.options.tag,'div')});
