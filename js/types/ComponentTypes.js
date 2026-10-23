@@ -1,0 +1,2 @@
+/** @typedef {{id:string,tag:string,className?:string,props?:Record<string,unknown>}} ComponentDefinition */
+export const ComponentType={ELEMENT:'element',CONTAINER:'container',CONTROL:'control',LAYOUT:'layout'};
