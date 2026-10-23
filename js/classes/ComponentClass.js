@@ -1,0 +1,2 @@
+import { BaseClass } from './BaseClass.js';
+export class ComponentClass extends BaseClass { constructor(id,options={}){super(id,options);this.element=null} mount(parent){if(!parent)return null;this.element=document.createElement(this.options.tag||'div');this.element.className=this.options.className||'';this.element.textContent=this.options.text||'';parent.append(this.element);return this.element} unmount(){this.element?.remove();this.element=null} }
