@@ -1,0 +1,1 @@
+export function requireRole(auth,role){if(!auth.isAuthenticated()||!auth.hasRole(role)){location.href='/login';return false}return true}export const Roles=Object.freeze({USER:'user',ADMIN:'administrator',SUPER_ADMIN:'super-admin'});
