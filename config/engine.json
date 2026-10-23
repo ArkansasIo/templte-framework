@@ -1,0 +1,9 @@
+{
+  "name": "HTML5 API Engine",
+  "version": "0.1.0-alpha",
+  "entry": "index.html",
+  "api": "/js/api/EngineAPI.js",
+  "moduleRoot": "/js/modules",
+  "styleRoot": "/css",
+  "pageRoot": "/pages"
+}
