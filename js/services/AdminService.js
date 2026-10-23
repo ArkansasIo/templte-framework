@@ -1,0 +1,1 @@
+export class AdminService{constructor(userService){this.userService=userService}users(){return this.userService.list()}disableUser(id){return this.userService.disable(id)}setRoles(id,roles){return this.userService.update(id,{roles})}grantRole(id,role){const user=this.userService.get(id);return this.setRoles(id,[...(user?.roles||[]),role])}}
