@@ -1,0 +1,2 @@
+import {AuthStore} from './AuthStore.js';
+export class AuthAPI{constructor(engine,store=new AuthStore()){this.engine=engine;this.store=store}login(session){return this.store.set({authenticated:true,...session})}logout(){this.store.clear();this.engine.router?.navigate('/login')}current(){return this.store.get()}requireRole(role){if(!this.store.isAuthenticated()||!this.store.hasRole(role))throw new Error('Forbidden');return true}}
