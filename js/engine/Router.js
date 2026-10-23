@@ -1,0 +1,1 @@
+export class Router { constructor(routes={}){this.routes=routes} resolve(path=location.pathname){return this.routes[path]||this.routes['*']||null} navigate(path){const target=this.resolve(path);if(target)location.href=target;return target} }
