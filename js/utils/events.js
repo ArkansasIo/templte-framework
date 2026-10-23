@@ -1,0 +1,1 @@
+export class EventBus{constructor(){this.map=new Map()}on(type,handler){if(!this.map.has(type))this.map.set(type,new Set());this.map.get(type).add(handler);return()=>this.off(type,handler)}off(type,handler){this.map.get(type)?.delete(handler)}emit(type,payload){for(const handler of this.map.get(type)||[])handler({type,payload,timestamp:Date.now()})}}
