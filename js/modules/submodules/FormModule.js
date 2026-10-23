@@ -1,0 +1,2 @@
+import { Module } from '../Module.js';
+export class FormModule extends Module { constructor(){super('forms',{name:'Form Module',type:'ui'})} start(engine){document.addEventListener('submit',e=>{const form=e.target.closest?.('[data-api-form]');if(!form)return;e.preventDefault();engine.events.emit('form:submit',{form,data:Object.fromEntries(new FormData(form))})})} }
