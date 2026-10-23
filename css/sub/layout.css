@@ -1,0 +1,14 @@
+/* SUB CSS — layout */
+.app-header { height: 64px; display:flex; align-items:center; gap:16px; padding:0 20px; background:var(--surface); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:20; }
+.app-title { font-size:1.05rem; margin:0; }
+.menu-toggle { background:none; color:var(--text); border:0; cursor:pointer; font-size:1.4rem; }
+.app-shell { display:grid; grid-template-columns:260px 1fr; min-height:calc(100vh - 108px); }
+.sidebar { background:var(--surface); border-right:1px solid var(--border); padding:18px; }
+.page-content { padding:32px; max-width:1400px; width:100%; margin:auto; }
+.app-footer { padding:18px 24px; color:var(--muted); border-top:1px solid var(--border); text-align:center; font-size:.85rem; }
+@media (max-width: 800px) {
+  .app-shell { grid-template-columns:1fr; }
+  .sidebar { display:none; }
+  .sidebar.open { display:block; }
+  .page-content { padding:20px; }
+}
