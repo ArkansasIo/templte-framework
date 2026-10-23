@@ -1,0 +1,2 @@
+import { Module } from '../Module.js';
+export class TableModule extends Module { constructor(){super('tables',{name:'Table Module',type:'ui'})} render(table,rows=[]){if(!table)return;const body=table.tBodies[0]||table.createTBody();body.replaceChildren(...rows.map(row=>{const tr=document.createElement('tr');tr.append(...Object.values(row).map(v=>{const td=document.createElement('td');td.textContent=String(v);return td}));return tr}))} }
