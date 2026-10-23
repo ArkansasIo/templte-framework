@@ -1,0 +1,1 @@
+export class NavigationAPI{constructor(engine){this.engine=engine}open(path){return this.engine.router.navigate(path)}current(){return location.pathname}resolve(path){return this.engine.router.resolve(path)}}
