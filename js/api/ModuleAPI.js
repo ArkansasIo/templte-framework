@@ -1,0 +1,1 @@
+export class ModuleAPI { constructor(engine){this.engine=engine} list(){return [...this.engine.modules.keys()]} get(id){return this.engine.modules.get(id)} enable(id){const m=this.get(id);if(m)m.definition.enabled=true;return m} disable(id){const m=this.get(id);if(m)m.definition.enabled=false;return m} }
