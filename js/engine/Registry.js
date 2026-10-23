@@ -1,0 +1,1 @@
+export class Registry { constructor(){this.items=new Map()} register(id,value){this.items.set(id,value);return value} get(id){return this.items.get(id)} has(id){return this.items.has(id)} remove(id){return this.items.delete(id)} all(){return [...this.items.values()]} }
