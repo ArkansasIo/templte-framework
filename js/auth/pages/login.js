@@ -1,0 +1,2 @@
+import {AuthStore} from '../AuthStore.js';
+const form=document.querySelector('[data-auth="login"]');const auth=new AuthStore();form?.addEventListener('submit',e=>{e.preventDefault();const data=Object.fromEntries(new FormData(form));auth.set({authenticated:true,user:{identifier:data.identifier},roles:['user']});location.href='../../pages/subpages/dashboard.html'});
