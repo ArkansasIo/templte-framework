@@ -1,0 +1,7 @@
+/* SUB CSS — menus and submenus */
+.main-menu { display:flex; flex-direction:column; gap:5px; }
+.menu-item, .submenu-item, .menu-group summary { padding:10px 12px; border-radius:7px; color:var(--muted); cursor:pointer; list-style:none; }
+.menu-item:hover, .submenu-item:hover, .menu-group summary:hover, .menu-item.active { background:var(--surface-2); color:var(--text); }
+.menu-group { border-radius:8px; }
+.menu-group[open] summary { color:var(--accent); }
+.submenu-item { display:block; padding-left:28px; font-size:.92rem; }
