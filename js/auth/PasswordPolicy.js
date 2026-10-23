@@ -1,0 +1,1 @@
+export const PasswordPolicy={minLength:12,validate(password){return typeof password==='string'&&password.length>=this.minLength}};
