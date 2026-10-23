@@ -1,1 +1,1 @@
-{"routes":{"/":"index.html","/dashboard":"pages/subpages/dashboard.html","/settings":"pages/subpages/settings.html"}}
+{"routes":{"/":"index.html","/login":"pages/auth/login.html","/register":"pages/auth/register.html","/application":"pages/application/index.html","/admin":"pages/admin/index.html","/dashboard":"pages/subpages/dashboard.html","/settings":"pages/subpages/settings.html"}}
