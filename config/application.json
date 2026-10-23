@@ -1,0 +1,1 @@
+{"application":{"name":"HTML5 API Engine","version":"0.1.0-alpha","defaultRoute":"/","loginRoute":"/login","adminRoute":"/admin","features":{"accounts":true,"administration":true,"panels":true,"subPanels":true,"themes":true}}}
