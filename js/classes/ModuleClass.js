@@ -1,0 +1,2 @@
+import { BaseClass } from './BaseClass.js';
+export class ModuleClass extends BaseClass { constructor(id,definition={}){super(id,definition);this.definition={id,name:id,type:'core',version:'0.1.0',enabled:true,...definition}} start(){} stop(){} }
