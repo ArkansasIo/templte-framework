@@ -1,0 +1,2 @@
+import { BaseClass } from './BaseClass.js';
+export class PageClass extends BaseClass { constructor(id, options={}){super(id,options);this.children=[]} addChild(child){this.children.push(child);return child} render(root){if(root)this.children.forEach(c=>c.render?.(root));return root} }
