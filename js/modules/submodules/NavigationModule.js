@@ -1,0 +1,2 @@
+import { Module } from '../Module.js';
+export class NavigationModule extends Module { constructor(){super('navigation',{name:'Navigation Module',type:'navigation'})} start(engine){this.engine=engine;document.addEventListener('click',e=>{const a=e.target.closest?.('[data-route]');if(a){e.preventDefault();engine.router?.navigate(a.dataset.route)}})} }
