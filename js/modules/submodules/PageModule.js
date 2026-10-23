@@ -1,0 +1,2 @@
+import { Module } from '../Module.js';
+export class PageModule extends Module { constructor(){super('pages',{name:'Page Module',type:'page'})} start(engine){engine.page={current:location.pathname};engine.events.emit('page:ready',engine.page)} }
