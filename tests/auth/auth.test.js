@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {PasswordPolicy} from '../../js/auth/PasswordPolicy.js';test('password policy enforces minimum length',()=>{assert.equal(PasswordPolicy.validate('short'),false);assert.equal(PasswordPolicy.validate('a-secure-password'),true)});
