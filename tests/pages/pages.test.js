@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {PageClass} from '../../js/classes/PageClass.js';test('page accepts child components',()=>{const page=new PageClass('home');const child={id:'child'};assert.equal(page.addChild(child),child);assert.equal(page.children.length,1)});
