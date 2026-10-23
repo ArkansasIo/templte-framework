@@ -1,0 +1,1 @@
+import {Module} from '../Module.js';export class MenuModule extends Module{constructor(){super('menus',{name:'Menu Module',type:'ui'})}start(){document.querySelectorAll('[data-menu-toggle]').forEach(button=>button.addEventListener('click',()=>document.querySelector('[data-sidebar]')?.classList.toggle('open')))}}
