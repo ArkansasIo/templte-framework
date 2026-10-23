@@ -1,0 +1,2 @@
+export const validators={required(value){return String(value??'').trim().length>0},email(value){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value??''))},minLength(value,n){return String(value??'').length>=n}};
+export function validateFields(values,rules){const errors={};for(const [name,checks] of Object.entries(rules)){for(const check of checks){const ok=check(values[name],values);if(ok!==true){errors[name]=typeof ok==='string'?ok:'Invalid value';break}}}return errors}
