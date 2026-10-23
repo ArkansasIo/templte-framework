@@ -1,0 +1,1 @@
+{"name":"templte-framework","version":"0.1.0-alpha","private":true,"type":"module","description":"Modular HTML5 API template engine","scripts":{"dev":"python -m http.server 8080","test":"node --test tests/**/*.test.js"}}
