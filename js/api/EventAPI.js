@@ -1,0 +1,1 @@
+export class EventAPI { constructor(engine){this.engine=engine} on(type,handler){return this.engine.events.on(type,handler)} off(type,handler){return this.engine.events.off(type,handler)} emit(type,payload){return this.engine.events.emit(type,payload)} }
