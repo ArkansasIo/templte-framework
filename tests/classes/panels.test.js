@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {PanelClass} from '../../js/classes/PanelClass.js';test('panel visibility can be changed',()=>{const p=new PanelClass('demo');assert.equal(p.visible,true);p.hide();assert.equal(p.visible,false);p.show();assert.equal(p.visible,true)});
