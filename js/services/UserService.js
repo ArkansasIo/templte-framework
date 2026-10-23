@@ -1,0 +1,1 @@
+export class UserService{constructor(users=[]){this.users=users}list(){return [...this.users]}get(id){return this.users.find(u=>u.id===id)||null}create(user){this.users.push(user);return user}update(id,patch){const user=this.get(id);if(!user)throw new Error('User not found');Object.assign(user,patch);return user}disable(id){return this.update(id,{status:'disabled'})}}
