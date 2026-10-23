@@ -1,0 +1,2 @@
+/** @typedef {{id:string,name:string,type:string,version:string,enabled:boolean}} ModuleDefinition */
+export const ModuleType={CORE:'core',UI:'ui',DATA:'data',NETWORK:'network',STORAGE:'storage',PAGE:'page',PLUGIN:'plugin'};
