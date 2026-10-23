@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {Module} from '../../js/modules/Module.js';test('module definition has defaults',()=>{const module=new Module('demo');assert.equal(module.definition.id,'demo');assert.equal(module.definition.enabled,true)});
