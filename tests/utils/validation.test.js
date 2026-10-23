@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {validators,validateFields} from '../../js/utils/validation.js';test('validation utilities validate fields',()=>{assert.equal(validators.email('a@example.com'),true);const errors=validateFields({email:'bad'},{email:[validators.email]});assert.ok(errors.email)});
